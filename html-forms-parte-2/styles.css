@@ -1,0 +1,119 @@
+body {
+ display: flex;
+ flex-direction: column;
+ font-family: "Roboto", sans-serif;
+ align-items: center;
+
+ background: #fc5c7d; /* fallback for old browsers */
+ background: -webkit-linear-gradient(
+   to right,
+   #6a82fb,
+   #fc5c7d
+ ); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(
+   to right,
+   #6a82fb,
+   #fc5c7d
+ ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+ margin-bottom: 30px;
+ text-align: center;
+ color: white;
+}
+
+form {
+ background-color: white;
+ padding: 30px;
+ max-width: 750px;
+ min-width: 350px;
+ border-radius: 15px;
+ margin-bottom: 300px;
+}
+
+fieldset {
+ margin-bottom: 50px;
+ padding: 15px;
+ padding-left: 20px;
+ padding-right: 20px;
+ border-color: whitesmoke;
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 15px;
+}
+
+legend{
+ font-size: 1.1em;
+ font-weight: bolder;
+}
+
+label {
+ display: block;
+ margin-top: 10px;
+}
+input,
+select {
+ background-color: white;
+ width: 95%;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ font-size: 1.3em;
+
+ border-color: rgb(210, 210, 210);
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 15px;
+ padding: 10px;
+}
+
+.submit-button {
+ width: 100%;
+ background: #fc5c7d; /* fallback for old browsers */
+ background: -webkit-linear-gradient(
+   to right,
+   #6a82fb,
+   #fc5c7d
+ ); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(
+   to right,
+   #6a82fb,
+   #fc5c7d
+ ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ color: white;
+ padding: 20px;
+ border: none;
+}
+
+.reset-button {
+ width: 100%;
+ background: #c04848; /* fallback for old browsers */
+ background: -webkit-linear-gradient(
+   to right,
+   #480048,
+   #c04848
+ ); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(
+   to right,
+   #480048,
+   #c04848
+ ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ color: white;
+ padding: 20px;
+ border: none;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+input[type="checkbox"] {
+ display: inline;
+ width: auto;
+}
+label.experience-input {
+ display: inline;
+}
+
+select {
+ width: 100%;
+}

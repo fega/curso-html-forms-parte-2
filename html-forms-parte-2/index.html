@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hola</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="logo" alt="" />
+        <h1>Estudio de mercados Curso de Programación</h1>
+      </div>
+      <div>
+        <p>Por favor llena las siguientes preguntas.</p>
+        <p>
+          Recuerda que la fecha limite de Inscripcion es el
+          <time>30 de febrero de 2023</time>
+        </p>
+      </div>
+    </header>
+    <main>
+      <form action="">
+        <!-- DATOS BÁSICOS -->
+        <fieldset>
+          <legend>Datos Básicos</legend>
+          <div>
+            <label for="name">Tu Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Pepito" />
+          </div>
+          <div>
+            <label for="apellido">Tus Apellidos</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Perez"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ejemplo@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="tel">Telefono</label>
+            <input type="tel" name="tel" id="tel" placeholder="300 555 5555" />
+          </div>
+        </fieldset>
+        <!-- CONOCIMIENTOS PREVIOS -->
+
+        <fieldset>
+          <legend>Detalles demograficos</legend>
+          <label for="experience"
+            >En cuales de los siguientes campos tienes experiencia?</label
+          >
+          <div>
+            <ul>
+              <li>
+                <input type="checkbox" name="experience" id="html-checkbox" />
+                <label class="experience-input" for="html-checkbox">HTML</label>
+              </li>
+              <li>
+                <input type="checkbox" name="experience" id="css-checkbox" />
+                <label class="experience-input" for="css-checkbox">CSS</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="experience"
+                  id="javascript-checkbox"
+                />
+                <label class="experience-input" for="javascript-checkbox"
+                  >Javascript</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <label for="birthdate">Tu fecha de nacimiento</label>
+            <input type="date" name="birthdate" id="birthdate" />
+          </div>
+          <!-- Nivel de estudios (DataList) -->
+
+          <div>
+            <label for="countries-datalist">Tu pais</label>
+            <input list="countries" id="countries-datalist" name="country" />
+            <datalist id="countries">
+              <option value="Colombia"></option>
+              <option value="Panama"></option>
+              <option value="Mexico"></option>
+              <option value="Ecuador"></option>
+              <option value="España"></option>
+              <option value="Bolivia"></option>
+            </datalist>
+          </div>
+          <div>
+            <label for="name">Genero</label>
+            <select name="gender" id="gender">
+              <option
+                type="date"
+                name="gender"
+                id="masculine"
+                value="m"
+                selected
+              >
+                Masculino
+              </option>
+              <option type="date" name="gender" id="femenine" value="f">
+                femenino
+              </option>
+              <option type="date" name="gender" id="other" value="o">
+                otro
+              </option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sobre el curso</legend>
+          <!-- a que hora te conviene tomar el curso  input=time -->
+          <div>
+            <label for="course-time"
+              >¿a que hora te convendria tomar el curso?</label
+            >
+            <input type="time" name="course-time" id="course-time" />
+          </div>
+          <div>
+            <label for="course-days"
+              >¿En que dias te convendria tomar el curso?</label
+            >
+            <select name="course-days" id="course-days" multiple size="7">
+              <option value="lun">Lunes</option>
+              <option value="mar">Martes</option>
+              <option value="mie">Miercoles</option>
+              <option value="jue">Jueves</option>
+              <option value="vie">Viernes</option>
+              <option value="sab">Sabado</option>
+              <option value="dom">Domingo</option>
+            </select>
+          </div>
+          <div>
+            <label for="course-max-hours"
+              >Cuantas horas al día podrías dedicarle al curso?</label
+            >
+            <input
+              type="number"
+              name="course-max-hours"
+              id="course-max-hours"
+              min="0"
+              max="8"
+            />
+          </div>
+          <div>
+            <label for="course-payment"
+              >Cuanto estarías dispuesto a pagar por el curso (USD)?</label
+            >
+            <input type="range" min="0" max="100" name="course-payment" />
+            <div><span>0 USD</span> <span style="float: right;">100 USD</span></div>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Otros</legend>
+          
+          <label for="other-portfolio">¿Tienes portafolio, cual es su URL?</label>
+          <input type="url" name="other-portfolio" id="other-portfolio" placeholder="http://portafolio.com">
+
+
+          <label for="other-color">¿Cual es tu color favorito?</label>
+          <input type="color" name="other-color" id="other-color">
+          <input type="hidden" name="creator" value="fabian "> 
+        </fieldset>
+
+        <!-- Reset button  -->
+        <!-- Go top button  -->
+        <input class="reset-button" type="reset" value="Eliminar datos" />
+        <!-- Submit  -->
+        <input
+          class="submit-button"
+          type="submit"
+          value="Envíar Estudio de mercados"
+        />
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
