@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -22,11 +22,25 @@
           <time>30 de febrero de 2023</time>
         </p>
       </div>
+      <nav>
+        <h2>Navegación:</h2>
+        <div>
+          <a href="#datos-basicos">Datos Básicos</a>
+        </div>
+        <div>
+          <a href="#datos-demograficos">Datos demograficos</a>
+        </div>
+        <div>
+          <a href="#datos-curso">Datos del curso</a>
+        </div>
+        <div>
+          <a href="#datos-otros">Otros datos</a>
+        </div>
+      </nav>
     </header>
     <main>
       <form action="">
-        <!-- DATOS BÁSICOS -->
-        <fieldset>
+        <fieldset id="datos-basicos">
           <legend>Datos Básicos</legend>
           <div>
             <label for="name">Tu Nombre</label>
@@ -57,7 +71,7 @@
         </fieldset>
         <!-- CONOCIMIENTOS PREVIOS -->
 
-        <fieldset>
+        <fieldset id="datos-demograficos">
           <legend>Detalles demograficos</legend>
           <label for="experience"
             >En cuales de los siguientes campos tienes experiencia?</label
@@ -125,7 +139,7 @@
           </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="datos-curso">
           <legend>Sobre el curso</legend>
           <!-- a que hora te conviene tomar el curso  input=time -->
           <div>
@@ -165,21 +179,28 @@
               >Cuanto estarías dispuesto a pagar por el curso (USD)?</label
             >
             <input type="range" min="0" max="100" name="course-payment" />
-            <div><span>0 USD</span> <span style="float: right;">100 USD</span></div>
+            <div>
+              <span>0 USD</span> <span style="float: right">100 USD</span>
+            </div>
           </div>
-
         </fieldset>
 
-        <fieldset>
+        <fieldset id="datos-otros">
           <legend>Otros</legend>
-          
-          <label for="other-portfolio">¿Tienes portafolio, cual es su URL?</label>
-          <input type="url" name="other-portfolio" id="other-portfolio" placeholder="http://portafolio.com">
 
+          <label for="other-portfolio"
+            >¿Tienes portafolio, cual es su URL?</label
+          >
+          <input
+            type="url"
+            name="other-portfolio"
+            id="other-portfolio"
+            placeholder="http://portafolio.com"
+          />
 
           <label for="other-color">¿Cual es tu color favorito?</label>
-          <input type="color" name="other-color" id="other-color">
-          <input type="hidden" name="creator" value="fabian "> 
+          <input type="color" name="other-color" id="other-color" />
+          <input type="hidden" name="creator" value="fabian " />
         </fieldset>
 
         <!-- Reset button  -->
