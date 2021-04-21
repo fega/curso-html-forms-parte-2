@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <title>Estudio de mercados Curso de Programación</title>
+    <!-- <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <div>
-        <h1>Estudio de mercados Curso de Programación</h1>
-      </div>
-      <div>
-        <p>Por favor llena las siguientes preguntas.</p>
-        <p>
-          Recuerda que la fecha límite de Inscripción es el
-          <time datetime="2023-02-30"> 30 de febrero de 2023</time>
-        </p>
-      </div>
+      <h1>Estudio de mercados Curso de Programación</h1>
+      <p>Por favor llena las siguientes preguntas.</p>
+      <p>
+        Recuerda que la fecha límite de Inscripción es el
+        <time datetime="2023-02-28"> 30 de febrero de 2023</time>
+      </p>
       <nav>
         <h2>Navegación:</h2>
         <div>
@@ -77,9 +74,7 @@
 
         <fieldset id="datos-demograficos">
           <legend>Detalles demográficos</legend>
-          <label for="experience"
-            >¿En cuáles de los siguientes campos tienes experiencia?</label
-          >
+          <label>¿En cuáles de los siguientes campos tienes experiencia?</label>
           <div>
             <ul>
               <li>
@@ -125,32 +120,30 @@
             <input list="countries" id="countries-datalist" name="country" />
             <datalist id="countries">
               <option disabled selected>Selecciona un país</option>
-              <option value="Colombia"></option>
-              <option value="Panama">Panamá</option>
-              <option value="Mexico">México</option>
-              <option value="Ecuador"></option>
-              <option value="España"></option>
-              <option value="Bolivia"></option>
-              <option value="Peru">Perú</option>
-              <option value="Chile">Chile</option>
+              <option value="CO">Colombia</option>
+              <option value="PA">Panamá</option>
+              <option value="MX">México</option>
+              <option value="EC">Ecuador</option>
+              <option value="ES">España</option>
+              <option value="BO">Bolivia</option>
+              <option value="PE">Perú</option>
+              <option value="CL">Chile</option>
             </datalist>
           </div>
           <div>
             <label for="name">Género</label>
             <select name="gender" id="gender">
               <option
-                type="date"
-                name="gender"
                 id="masculine"
                 value="m"
                 selected
               >
                 Masculino
               </option>
-              <option type="date" name="gender" id="femenine" value="f">
+              <option id="femenine" value="f">
                 Femenino
               </option>
-              <option type="date" name="gender" id="other" value="o">
+              <option id="other" value="o">
                 Otro
               </option>
             </select>
@@ -195,7 +188,7 @@
             <label for="course-payment"
               >¿Cuánto estarías dispuesto a pagar por el curso (USD)?</label
             >
-            <input type="range" min="0" max="100" name="course-payment" />
+            <input type="range" min="0" max="100" name="course-payment" id="course-payment" />
             <div>
               <span>0 USD</span> <span style="float: right">100 USD</span>
             </div>

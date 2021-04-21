@@ -7,10 +7,10 @@ h2 {
   margin-bottom: 10px;
 }
 body {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   font-family: "Roboto", sans-serif;
-  align-items: center;
+  /* align-items: center; */
 
   background: #fc5c7d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -32,6 +32,7 @@ header {
 }
 
 form {
+  margin: auto;
   background-color: white;
   padding: 30px;
   max-width: 750px;
